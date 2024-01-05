@@ -11,6 +11,7 @@
   excludesfile = ~/.gitignore
   pager = less -r
   editor = vim
+  quotepath = false
 [push]
   default = current
 [merge]
@@ -51,3 +52,10 @@
   su = submodule update
 [http]
     postBuffer = 1048576000
+[url "https://"]
+	insteadOf = git://
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
