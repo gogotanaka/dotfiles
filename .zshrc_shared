@@ -1,0 +1,38 @@
+# Basis
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+ssh-add ~/.ssh/id_rsa
+
+# Complement command and its options
+autoload -Uz compinit
+compinit
+
+# History
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=5000
+SAVEHIST=5000
+export HISTIGNORE=ls:pwd
+setopt append_history
+setopt hist_ignore_dups
+setopt share_history
+setopt hist_no_store
+setopt hist_verify
+
+# Emacs key bind
+bindkey -e
+setopt NO_beep
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+alias ls="ls -F"
+alias lsa="ls -AF"
+alias -g G='| grep'
+
+alias g='git'
+alias be='bundle exec'
+
+# homeの重さをみる
+alias dushh='du -sh ~/*/'
+
+alias gam="git add .; git commit -m 'tweak'"
