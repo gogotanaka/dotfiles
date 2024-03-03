@@ -35,4 +35,4 @@ alias be='bundle exec'
 # homeの重さをみる
 alias dushh='du -sh ~/*/'
 
-alias gam="git add .; git commit -m 'tweak'"
+alias gamp="git add .; git commit -m 'tweak'; git push"
