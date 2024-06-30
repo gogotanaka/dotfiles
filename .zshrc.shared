@@ -36,3 +36,5 @@ alias be='bundle exec'
 alias dushh='du -sh ~/*/'
 
 alias gamp="git add .; git commit -m 'tweak'; git push"
+
+git config pull.rebase true
