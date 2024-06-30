@@ -1,6 +1,11 @@
-
+```
 curl https://raw.githubusercontent.com/gogotanaka/dotfiles/master/.gitconfig > ~/.gitconfig
 
-curl https://raw.githubusercontent.com/gogotanaka/dotfiles/master/.zshrc_shared > ~/.zshrc_shared
+curl https://raw.githubusercontent.com/gogotanaka/dotfiles/master/.zshrc.shared > ~/.zshrc.shared
+```
 
-source ~/.zshrc_shared
+```
+echo 'source ~/.zshrc.shared' >> ~/.zshrc
+touch ~/.zshrc.config
+echo 'source ~/.zshrc.config' >> ~/.zshrc
+```
